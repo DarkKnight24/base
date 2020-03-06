@@ -1,9 +1,3 @@
-/**
- * ExceptionUtil.java
- * com.uxuexi.util
- * Copyright (c) 2012, 北京聚智未来科技有限公司版权所有.
- */
-
 package com.movie.base.utils;
 
 import com.movie.base.exception.IBusinessException;
@@ -21,9 +15,6 @@ import static com.movie.base.utils.Util.isEmpty;
 
 /**
  * 异常处理工具类
- *
- * @author 庄君祥
- * @Date 2012-5-1
  */
 public final class ExceptionUtil {
 

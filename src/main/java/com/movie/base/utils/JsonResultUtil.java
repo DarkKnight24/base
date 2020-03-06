@@ -1,8 +1,3 @@
-/**
- * RequestUtil.java
- * com.uxuexi.web.util
- * Copyright (c) 2014, 北京聚智未来科技有限公司版权所有.
- */
 package com.movie.base.utils;
 
 import com.movie.base.exception.IBusinessException;
@@ -16,9 +11,6 @@ import java.util.Map;
  * <p>
  * 用于返回结果为json结果的工具。
  * 主要用于前后端数据对接
- *
- * @author ZhuangJunxiang(529272571 @ qq.com)
- * @Date 2017年4月18日
  */
 public class JsonResultUtil {
     private static final String EMPTY = "";

@@ -1,9 +1,3 @@
-/**
- * StringUtil.java
- * com.uxuexi.core.utils
- * Copyright (c) 2011, 北京聚智未来科技有限公司版权所有.
- */
-
 package com.movie.base.utils;
 
 import org.nutz.lang.Lang;
@@ -19,9 +13,6 @@ import static com.movie.base.utils.Util.isEmpty;
 
 /**
  * 字符串处理的工具类
- *
- * @author 庄君祥
- * @Date 2014-4-3
  */
 public final class StringUtil {
 

@@ -1,9 +1,3 @@
-/**
- * BeanUtil.java
- * com.uxuexi.util
- * Copyright (c) 2012, 北京聚智未来科技有限公司版权所有.
- */
-
 package com.movie.base.utils;
 
 import org.nutz.castor.Castors;
@@ -15,19 +9,9 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Type;
 import java.util.Map;
 
+import static com.movie.base.utils.ExceptionUtil.pEx;
 import static com.movie.base.utils.Util.isEmpty;
 
-/**
- * 封装了bean的操作
- * <p>
- * 从一个bean copy到另一个bean
- * <p>
- * 依赖了nutz 的Mirror
- *
- * @author 庄君祥
- * @Date 2014-4-3
- * @see Mirror
- */
 public final class BeanUtil {
 
     /**
@@ -56,10 +40,11 @@ public final class BeanUtil {
                 value = sourceMirror.getValue(source, sourceFd);
                 targetMirror.setValue(target, fieldName, value);
             } catch (Exception e) {
-//				throw pEx("对象拷贝时出现异常", e);
+                throw pEx("对象拷贝时出现异常", e);
             }
         }
     }
+
 
     /**
      * 判断是否存在某属性

@@ -1,9 +1,3 @@
-/**
- * JsonUtil.java
- * com.uxuexi.common.util
- * Copyright (c) 2014, 北京聚智未来科技有限公司版权所有.
- */
-
 package com.movie.base.utils;
 
 import org.nutz.json.Json;
@@ -16,9 +10,6 @@ import static com.movie.base.utils.Util.isEmpty;
 
 /**
  * json工具类
- *
- * @author 庄君祥
- * @Date 2014-4-3
  */
 public final class JsonUtil {
 

@@ -1,9 +1,3 @@
-/**
- * JsonReturnAspect.java
- * com.we.core.web.aop
- * Copyright (c) 2017, 北京聚智未来科技有限公司版权所有.
- */
-
 package com.movie.base.aop;
 
 import com.movie.base.utils.AspectUtil;

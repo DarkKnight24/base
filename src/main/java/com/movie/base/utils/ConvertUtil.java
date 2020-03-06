@@ -1,9 +1,3 @@
-/**
- * ConvertUtil.java
- * com.uxuexi.common.util
- * Copyright (c) 2014, 北京聚智未来科技有限公司版权所有.
- */
-
 package com.movie.base.utils;
 
 import org.nutz.castor.Castors;
@@ -19,14 +13,12 @@ import static org.nutz.castor.Castors.me;
 
 /**
  * 类型转换工具类
- *
- * @author 庄君祥
- * @Date 2014-4-3
  */
 public final class ConvertUtil {
 
     /**
      * 对象转换成字符串
+     *
      * @param o 对象
      * @return 字符串, 如果为null，则返回空串
      */
@@ -39,6 +31,7 @@ public final class ConvertUtil {
 
     /**
      * 对象转换成long值
+     *
      * @param o 对象
      * @return 对应值，如果转换异常或为null，则返回-1
      */
@@ -60,6 +53,7 @@ public final class ConvertUtil {
 
     /**
      * 对象转换成int值
+     *
      * @param o 对象
      * @return 对应值，如果转换异常或为null，则返回-1
      */
@@ -81,6 +75,7 @@ public final class ConvertUtil {
 
     /**
      * 对象转换成long值
+     *
      * @param o 对象
      * @return 对应值，如果转换异常或为null，则返回-1
      */
@@ -129,7 +124,7 @@ public final class ConvertUtil {
      * 如果isSimple为true，则支持数组、list、map、pojo等处理<br/>
      * 否则则不支持
      *
-     * @param obj 待转化的对象
+     * @param obj      待转化的对象
      * @param isSimple 是否简单处理
      * @return map
      */
@@ -180,7 +175,7 @@ public final class ConvertUtil {
     /**
      * map转换为对象
      *
-     * @param src 源map
+     * @param src    源map
      * @param toType 对象类别
      * @return 对象
      * @throws FailToCastObjectException
@@ -191,7 +186,8 @@ public final class ConvertUtil {
 
     /**
      * 类型转换
-     * @param src 原对象
+     *
+     * @param src    原对象
      * @param toType 类型
      * @return 转换后对象
      */
@@ -202,14 +198,14 @@ public final class ConvertUtil {
     /**
      * 转为DTO
      *
-     * @param obj 对象
+     * @param obj   对象
      * @param clazz 类名
      * @return 对象
      */
     public static <T> Object obj2Dto(Object obj, Class<T> clazz) {
         if (null == obj) {
-			return null;
-		}
+            return null;
+        }
 
         if (obj.getClass().isArray()) {
             List<Object> list = new ArrayList<>();
@@ -234,7 +230,7 @@ public final class ConvertUtil {
     /**
      * 单实体转Dto
      *
-     * @param obj 对象
+     * @param obj   对象
      * @param clazz dto类
      * @return 对象
      */

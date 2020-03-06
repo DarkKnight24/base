@@ -1,9 +1,3 @@
-/**
- * Util.java
- * com.uxuexi.core.utils
- * Copyright (c) 2011, 北京聚智未来科技有限公司版权所有.
- */
-
 package com.movie.base.utils;
 
 import org.nutz.lang.Lang;
@@ -18,9 +12,6 @@ import java.util.Optional;
  * 常用的工具类的集合
  * <p>
  * 包含最常用工具类，比如判空、判断相等等与具体对象无关的方法
- *
- * @author 庄君祥
- * @Date 2014-4-3
  */
 public final class Util {
 
@@ -36,8 +27,7 @@ public final class Util {
      * <li>其他对象 : 一定不为空
      * </ul>
      *
-     * @param obj
-     *            任意对象
+     * @param obj 任意对象
      * @return 是否为空
      */
     public final static boolean isEmpty(final Object obj) {
@@ -75,6 +65,7 @@ public final class Util {
      * <li>对数组，集合， Map 会深层比较
      * </ul>
      * 当然，如果你重写的 equals 方法会优先
+     *
      * @param a 待判定对象
      * @param b 待判定对象
      * @return 对象是否相等
@@ -86,8 +77,7 @@ public final class Util {
     /**
      * 如果是数组或集合取得第一个对象。 否则返回自身
      *
-     * @param o
-     *            任意对象
+     * @param o 任意对象
      * @return 第一个代表对象
      */
     public final static Object first(final Object o) {
