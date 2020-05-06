@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient("MovieDataServer")
 public interface ScheduleClient {
     
-    @GetMapping("/schedule/detail/{scheduleId}")
+    @GetMapping("/movie/schedule/detail/{scheduleId}")
     Object detail(@PathVariable Long scheduleId);
 }
